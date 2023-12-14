@@ -88,16 +88,6 @@ class detector():
         Y=(y1-y2)**2
         length=math.sqrt((X+Y))
         return length,img
-    
-
-
-if __name__=="__main__":
-    resizeandsaveImages()
-    detector().face_detector()
-    detector().hands_detector()
-    detector().finger_distance()
-    detector().fingerup()
-    detector().finger_tip()
 
 
 

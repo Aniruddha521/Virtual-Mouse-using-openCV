@@ -9,8 +9,10 @@ smoothening=5
 i_x,i_y=0,0
 f_x,f_y=0,0
 frame_red=100
-url="http://192.168.43.1:8080/video"
-cap=cv.VideoCapture(0)
+url=input("Enter URL: ")
+if url == '0':
+    url = 0
+cap=cv.VideoCapture(url)
 framewidth=720
 frameheight=480
 cap.set(3,framewidth)
